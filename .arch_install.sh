@@ -90,6 +90,13 @@ vim +PluginInstall +qall # Install plugins
 #sudo apt -y install dropbox_2019.02.14_amd64.deb
 #rm dropbox_2019.02.14_amd64.deb
 
+# Google Chrome
+git clone https://aur.archlinux.org/google-chrome.git /tmp/
+cd /tmp/google-chrome/
+makepkg -s --noconfirm
+sudo pacman -U --noconfirm *.pkg.tar.xz
+cd ~
+rm -rf /tmp/google-chrome/
 
 # Git setup
 git config --global core.editor vim
