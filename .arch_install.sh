@@ -7,7 +7,7 @@ clear
 # Dropbox
 
 # Installing packages, updating system and creating directories
-sudo pacman -Sy
+sudo pacman -Sy --noconfirm
 sudo pacman -S --noconfirm snapd
 sudo pacman -S --noconfirm wine
 sudo pacman -S --noconfirm texlive
@@ -97,5 +97,5 @@ git config --global user.name "patricab"
 git config --global user.email "pigface.survey@gmail.com"
 
 # Upgrade system and reboot
-sudo pacman -Su
+sudo pacman -Su --noconfirm
 sudo reboot
