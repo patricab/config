@@ -5,19 +5,24 @@ clear
 # Programs to install: (supplement)
 #
 # Dropbox
+# Add config files (vimrc, bashrc, i3 etc.)
 
 # Installing packages, updating system and creating directories
 sudo pacman -Sy --noconfirm
 sudo pacman -S --noconfirm snapd
 sudo pacman -S --noconfirm wine
-sudo pacman -S --noconfirm texlive
+sudo pacman -S --noconfirm texlive-core
+sudo pacman -S --noconfirm texlive-science
+sudo pacman -S --noconfirm texlive-latexextra
+sudo pacman -S --noconfirm texlive-bibtexextra
+sudo pacman -S --noconfirm texlive-formatsextra
 sudo pacman -S --noconfirm calibre
 sudo pacman -S --noconfirm arduino
-sudo pacman -S --noconfirm newsbeuter
-sudo pacman -S --noconfirm morse
-sudo pacman -S --noconfirm wireshark
-sudo pacman -S --noconfirm skypeforlinux
-sudo pacman -S --noconfirm slack-desktop
+sudo pacman -S --noconfirm newsboat
+#sudo pacman -S --noconfirm morse
+sudo pacman -S --noconfirm wireshark-cli
+#sudo pacman -S --noconfirm skypeforlinux
+#sudo pacman -S --noconfirm slack-desktop
 sudo pacman -S --noconfirm libreoffice
 sudo pacman -S --noconfirm vim
 sudo pacman -S --noconfirm vlc
