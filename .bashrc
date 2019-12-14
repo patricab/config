@@ -119,19 +119,16 @@ fi
 #####
 PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] "
 alias popd='popd -n'
-alias term='i3-sensible-terminal'
 alias python='python3'
-alias update='sudo apt -y update --allow-unauthenticated; sudo apt -y upgrade --allow-unauthenticated;'
+alias update='sudo pacman Sy --noconfirm'
 alias activate='source env/bin/activate'
-alias gc='google-chrome --force-device-scale-factor=1.4'
 alias ltc='wine ~/.wine/drive_c/Program\ Files/LTC/LTspiceXVII/XVIIx64.exe'
-alias gcn='google-chrome --incognito --force-device-scale-factor=1.4'
 alias cls='history -c && history -w; clear'
 alias ds='dirs -v' 
-alias gl='git ls-tree -r master --name-only'
+export EDITOR=vim
 
 # Path
 export vrc=$HOME/.vimrc
 export GOPATH=$HOME/go
 export PATH=$PATH:/home/pab/Documents/arduino-1.8.10/
-source /etc/bash_completion.d/git-prompt
+source /usr/share/bash-completion/completions/git
